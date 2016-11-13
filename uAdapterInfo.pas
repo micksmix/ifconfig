@@ -32,7 +32,7 @@ const
 
 type
   MIB_IFROW = record
-    wszName: array[0..(MAX_INTERFACE_NAME_LEN * 2 - 1)] of char;
+    wszName: array[0..(MAX_INTERFACE_NAME_LEN * 2 - 1)] of ansichar;
     dwIndex: longint;
     dwType: longint;
     dwMtu: longint;
@@ -55,7 +55,7 @@ type
     dwOutErrors: longint;
     dwOutQLen: longint;
     dwDescrLen: longint;
-    bDescr: array[0..(MAXLEN_IFDESCR - 1)] of char;
+    bDescr: array[0..(MAXLEN_IFDESCR - 1)] of ansichar;
   end;
 
 type
